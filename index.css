@@ -568,7 +568,14 @@ body:not(.user-is-tabbing) a:focus {
         align-items: initial;
     }
 }
-
+.about__photo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+  
 .about__photo-container {
     margin-bottom: var(--gutter-normal);
 }
