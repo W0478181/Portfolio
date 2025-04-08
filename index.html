@@ -1,94 +1,228 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/Portfolio/stylesheets/styles.css">
-    <title>Aiden Connolly Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Aiden Connolly | IT Generalist student from NSCC Strait Area, Nova Scotia.
+  </title>
+  <meta name="description" content="Add small description of yourslef.">
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="templates/goals.html">Goals</a></li>
-                <li><a href="templates/resume">Resume</a></li>
-                <li><a href="templates/projects.html">Projects</a></li>
-                <li><a href="templates/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="home" class="intro">
-        <div class="container">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Hi, I'm Aiden Connolly, a IT Generalist student at NSCC Strait Area Campus.</p>
-        </div>
-    </section>
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I am an IT Generalist student looking to expand my skills by applying my practical experience in troubleshooting, and software management. I am a dependable candidate and ready to take on challenges using problem-solving and task prioritization skills to help the team succeed.</p>
-                </div>
-                <div class="about-image">
-                    <img src="images/pc.jpg" alt="Pc's" />
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="skills" class="skills">
-        <div class="skills-container">
-            <h2>My Skills</h2>
-            <ul>
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#goals" class="nav__link">Goals</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>Aiden Connolly</span>
+          <span class="typed-text" id="typing"></span>
+        </h1>
+        <p>IT Generalist student from NSCC with strong troubleshooting, data management, networking and teamwork skills. 
+          Seeking hands-on experience to grow and contribute in the tech industry.</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+  <main role="main">
+    <!-- ***** Work ***** -->
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Weather Dashboard</h3>
+              <p>
+                A responsive web application that allows users to search 
+                for cities and view current weather conditions,
+                view weather details, toggle between Celsius and Fahrenheit, 
+                search history, and save favorite cities.
+              </p>
+              <ul class="work__list">
                 <li>HTML</li>
                 <li>CSS</li>
-                <li>Python</li>
-                <li>Git</li>
-                <li>Linux</li>
-                <li>SQL</li>
-                <li>Networking</li>
-                <li>Windows</li>
-                <li>Security</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>Axios</li>
+                <li>Lodash</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://w0478181.github.io/PROG2700/Assignments/Weather-Dashboard/index.html" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/W0478181" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Weather-Dash.png" class="work__image" alt="Weather Dash" />
+              <p class="work__reflection">
+                Building this weather dashboard helped me develop stronger frontend skills, especially in JavaScript, API integration, and DOM manipulation. 
+                It reflects my interest in creating responsive, user-focused web applications and taught me how to work with real-time external data.
+              </p>
+              
+            </div>
+          </div>
+          <div class="work__box">
+            <div class="work__text">
+              <h3>BattleSim Python Terminal Game</h3>
+              <p>
+                A turn-based terminal battle simulator created in Python. The game generates randomized player and enemy avatars with unique names, health stats, and weapons. Combat includes randomized damage, critical hits, and health potions. It runs a best-of-three format and features custom data files for names, titles, and weapons.
+              </p>
+              <ul class="work__list">
+                <li>Python 3</li>
+                <li>OOP & Functions</li>
+                <li>File I/O</li>
+                <li>Randomization & Logic</li>
+              </ul>          
+              <div class="work__links">
+                <a href="./BattleSim_AidenConnolly.zip" download class="btn">Download BattleSim Game</a>
+                <a href="https://github.com/W0478181/Prog1400/tree/main/BattleSim">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Battle-Sim.png" class="work__image" alt="Battle Sim" />
+              <p class="work__reflection">
+                This project helped me strengthen my Python skills and understand how to handle structured data, logic flow, and randomization—key skills I plan to use in future backend roles.
+              </p>
+            </div>
+          </div>
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Capstone Project</h3>
+              <p>
+                For my final project at NSCC, my class is developping a secure and scalable network infrastructure to support a carpool service for the campus. 
+                The goal was to create a reliable platform that allows students  to coordinate shared rides efficiently and securely.
+              </p>
+              <p>
+                I am part of the network and security team, together we designed a network and simulated it using GNS3, incorporating best practices in segmentation, load balancing, security, and high availability. 
+                Key components include internal and edge firewalls, NGINX web server, DNS, a management VLAN, and a cluster of worker nodes for scalability.
+              </p>
+              <ul class="work__list">
+                <li>GNS3 Network Simulation</li>
+                <li>NGINX Web Server</li>
+                <li>Firewall & VLAN Configuration</li>
+                <li>Kubernetes</li>
+                <li>Linux Administration</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Capstone.png" class="work__image" alt="Capstone" />
+              <p class="work__reflection">
+                Designing the network architecture taught me about scalable infrastructure, VLAN segmentation, and securing services through internal and edge firewalls. 
+                It pushed me closer toward my goal of working in network security or systems administration.
+              </p>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***** Goals ***** -->
+    <section class="goals" id="goals">
+      <div class="row">
+        <h2>My Career Goals</h2>
+    <p>As a student in IT Generalist at NSCC, my career journey is just beginning. I’m passionate about technology and problem-solving. 
+      Here are some of the goals I’ve set to guide my development and success in this field.</p>
+    <h3>Short-Term Goals</h3>
+    <ul>
+      <li>Improve my skills in programming languages like Python, HTML, and CSS.</li>
+      <li>Gain hands-on experience through entry level positions or projects.</li>
+      <li>Build a strong portfolio showcasing my web development and programming work.</li>
+      <li>Earn relevant certifications, such as CompTIA A+ or Network+.</li>
+    </ul>
+    <h3>Long-Term Goals</h3>
+    <ul>
+      <li>Become a skilled IT professional specializing in network security.</li>
+      <li>Work for a reputable tech company, contributing to innovative projects.</li>
+      <li>Grow into a leadership role, where I can contribute to large-scale IT strategies.</li>
+      <li>Continually learn and adapt to new technologies, ensuring that my skills are up-to-date with industry trends.</li>
+    </ul>
+    <h3>Summary</h3>
+    <p>In the short term, I’m focusing on building my technical skills and gaining practical experience. 
+      My long-term goals include not only mastering my skills but also becoming a leader in the tech industry. 
+      I am excited about the opportunities ahead and committed to achieving these goals through hard work, education, and continuous improvement.
+    </p>
+  </div>
+</section>
+    <!-- ***** About ***** -->
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              I'm an IT Generalist student currently finishing my last year at NSCC Strait Area Campus. 
+              I have a strong background in technical troubleshooting, networking, and teamwork, with a passion for learning and growing in fast-paced environments. 
+              I’ve gained valuable experience through roles in retail, logistics, and customer service. 
+              I’m actively seeking opportunities to apply my skills in production operations or technical support environments. 
+            </p>
+            <ul class="work__list">
+              <li>WHMIS 2015 Certification</li>
+              <li>GBA+ Training</li>
+              <li>Fall Protection Certificate</li>
+              <li>Standard First Aid CPR “C” – AED</li>
             </ul>
+            <a href="https://1drv.ms/b/c/bc75b9c24119b557/Ea9OiJQNfmtLo1IVDN99qi8BwVzoCYPVWWPg8DbJv_CzCg?e=Rnc5io" class="btn">My Resume</a>
+          </div>
+          <div class="about__photo-container">
+            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+          </div>
         </div>
+      </div>
     </section>
-
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project-card">
-                <h3><a href="https://github.com/W0478181/WEBD1000">Year 1 Web Development</a></h3>
-                <p>GitHub Repository for year my Web Development class</p>
-            </div>
-            <div class="project-card">
-                <h3><a href="https://github.com/W0478181/PROG1700Assignments">Year 1 Programming</a></h3>
-                <p>GitHub Repository for year my Programming class</p>
-            </div>
-            <div class="project-card">
-                <h3><a href="https://github.com/W0478181/Prog1400">Year 1 Object Oriented Programming</a></h3>
-                <p>GitHub Repository for year my OOP class</p>
-            </div>
-            <div class="project-card">
-                <h3><a href="https://github.com/W0478181/WEBDY2">Year 2 Web Design</a></h3>
-                <p>GitHub Repository for year my Web Design class</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="email-container">
-            <h2>Contact Me</h2>
-            <a href="mailto:connolly.aiden@outlook.com">connolly.aiden@outlook.com</a>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Aiden Connolly All rights reserved.</p>
-        </div>
-    </footer>
+  </main>
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          If you’d like to get in touch, feel free to reach out via email. 
+          I’m open to chatting about opportunities in tech or want to ask questions? 
+          or have some advice for me or just want to say "Hi 👋".
+        </p>
+        <a href="mailto:connolly.aiden@outlookcom" class="btn">connolly.aiden@outlookcom</a>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Footer ***** -->
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://github.com/W0478181" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/aiden-connolly-09b8a7266/">
+            <img src="./images/linkedin.svg" class="footer__social-image" title="Link to Linkedin Profile" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+      <p>&copy; 2025 - Aiden Connolly.</p>
+    </div>
+  </footer>  
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
 </body>
 </html>
